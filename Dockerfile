@@ -22,5 +22,3 @@ COPY --from=builder /build/restic /usr/local/bin/restic
 USER user
 ENTRYPOINT ["/usr/local/bin/restic"]
 CMD ["help"]
-
-LABEL org.opencontainers.image.source https://github.com/acrobox/restic
